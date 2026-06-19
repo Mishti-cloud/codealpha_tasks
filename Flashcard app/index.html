@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flashcard App</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background-color: #ffe6f0;
+      margin-top: 30px;
+    }
+
+    h1 {
+      color: #cc0066;
+    }
+
+    #card {
+      width: 320px;
+      height: 160px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: #fff0f5;
+      color: #cc0066;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(255, 102, 178, 0.3);
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    input {
+      padding: 10px;
+      margin: 5px;
+      width: 200px;
+      border-radius: 8px;
+      border: 1px solid #ff66b2;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 8px;
+      border: none;
+      background-color: #ff66b2;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e60073;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>💖 Flashcard Quiz App</h1>
+
+  <!-- CARD -->
+  <div id="card" onclick="flipCard()">Click Next to Start</div>
+
+  <!-- CONTROLS -->
+  <div>
+    <button onclick="prevCard()">Previous</button>
+    <button onclick="nextCard()">Next</button>
+  </div>
+
+  <!-- ADD CARD -->
+  <h3>Add New Card</h3>
+  <input type="text" id="questionInput" placeholder="Enter Question">
+  <input type="text" id="answerInput" placeholder="Enter Answer">
+  <br>
+  <button onclick="addCard()">Add Card</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
